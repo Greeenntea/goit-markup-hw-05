@@ -655,8 +655,8 @@ a:active {
 .leave-contacts-checkbox:checked
   + .leave-contacts-checkbox-label
   > .privacy-own-checkbox {
-  border: none;
   background-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
