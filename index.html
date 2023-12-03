@@ -576,7 +576,161 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe-container">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-form-label" for="subscribe-email">
+              <input
+                class="footer-subscribe-form-input"
+                id="subscribe-email"
+                name="subscribe-email"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg
+                class="subscribe-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe icon"
+              >
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn">
+          <svg
+            class="modal-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="modal close icon"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="leave-contacts-text">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="leave-contacts-form">
+          <div class="leave-contacts-field">
+            <label class="leave-contacts-field-label" for="user-name"
+              >Name</label
+            >
+            <div class="input-and-icon">
+              <input
+                class="leave-contacts-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+                title="Pavlo"
+                required
+              />
+              <svg
+                class="icon-in-input"
+                width="18"
+                height="24"
+                aria-label="person icon"
+              >
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="leave-contacts-field">
+            <label class="leave-contacts-field-label" for="user-tel"
+              >Phone</label
+            >
+            <div class="input-and-icon">
+              <input
+                class="leave-contacts-input"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg
+                class="icon-in-input"
+                width="18"
+                height="24"
+                aria-label="phone icon"
+              >
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="leave-contacts-field">
+            <label class="leave-contacts-field-label" for="user-email"
+              >Email</label
+            >
+            <div class="input-and-icon">
+              <input
+                class="leave-contacts-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+              />
+              <svg
+                class="icon-in-input"
+                width="18"
+                height="24"
+                aria-label="email icon"
+              >
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="leave-contacts-field">
+            <label class="leave-contacts-field-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="leave-contacts-field-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="leave-contacts-checkbox-form">
+            <input
+              class="leave-contacts-checkbox visually-hidden"
+              id="user-privacy-policy"
+              name="user-privacy-policy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label
+              class="leave-contacts-checkbox-label"
+              for="user-privacy-policy"
+              ><span class="privacy-own-checkbox">
+                <svg
+                  class="checkbox-svg"
+                  width="10"
+                  height="8"
+                  aria-label="checkmark-icon"
+                >
+                  <use href="./images/icons.svg#icon-property-click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="leave-contacts-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
