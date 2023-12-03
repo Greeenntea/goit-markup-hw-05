@@ -605,9 +605,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" type="button">
           <svg
             class="modal-close-btn-icon"
             width="8"
@@ -691,7 +691,7 @@
               </svg>
             </div>
           </div>
-          <div class="leave-contacts-field">
+          <div class="form-comment-container">
             <label class="leave-contacts-field-label" for="user-comment"
               >Comment</label
             >
@@ -705,15 +705,13 @@
           <div class="leave-contacts-checkbox-form">
             <input
               class="leave-contacts-checkbox visually-hidden"
-              id="user-privacy-policy"
-              name="user-privacy-policy"
+              id="user-privacy"
+              name="user-privacy"
               type="checkbox"
               value="true"
               required
             />
-            <label
-              class="leave-contacts-checkbox-label"
-              for="user-privacy-policy"
+            <label class="leave-contacts-checkbox-label" for="user-privacy"
               ><span class="privacy-own-checkbox">
                 <svg
                   class="checkbox-svg"
