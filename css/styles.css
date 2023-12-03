@@ -652,19 +652,18 @@ a:active {
   text-decoration-line: underline;
   color: #4d5ae5;
 }
+
+.leave-contacts-checkbox:focus,
++ .leave-contacts-checkbox-label > .privacy-own-checkbox {
+  border: 1px solid #4d5ae5;
+}
+
 .leave-contacts-checkbox:checked
   + .leave-contacts-checkbox-label
   > .privacy-own-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-}
-
-.leave-contacts-checkbox:focus,
-.leave-contacts-checkbox:hover
-  + .leave-contacts-checkbox-label
-  > .privacy-own-checkbox {
-  border: 1px solid #4d5ae5;
 }
 
 .checkbox-svg {
